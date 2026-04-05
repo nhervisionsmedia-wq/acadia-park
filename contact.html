@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Acadia Park Equipment Co.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="index.html">Home</a>
+    </div>
+  </nav>
+
+  <header class="email-header">
+    <div class="brand-wrap">
+      <div class="brand-text">
+        <h1>ACADIA EQUIPMENT</h1>
+        <h1>PARK CO.</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="color-strip">
+    <span class="yellow"></span>
+    <span class="brown"></span>
+    <span class="orange"></span>
+    <span class="green"></span>
+  </div>
+
+  <main class="contact-page">
+    <section class="mockup-form-section">
+      <h2>New Contact Form Submission</h2>
+      <div class="green-line"></div>
+
+      <form id="contactForm" novalidate>
+
+        <div class="form-row">
+          <label for="fullname">Name</label>
+          <div class="field-wrap">
+            <input type="text" id="fullname" name="fullname">
+            <small class="error" id="fullnameError"></small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <div class="field-wrap">
+            <input type="email" id="email" name="email">
+            <small class="error" id="emailError"></small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <div class="field-wrap">
+            <input type="tel" id="phone" name="phone">
+            <small class="error" id="phoneError"></small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="inquirytype">Inquiry Type</label>
+          <div class="field-wrap">
+            <select id="inquirytype" name="inquirytype">
+              <option value="">Select an inquiry type</option>
+              <option value="General Questions">General Questions</option>
+              <option value="Orders">Orders</option>
+              <option value="Gear Question">Gear Question</option>
+              <option value="Customer Support">Customer Support</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row subject-row">
+          <label for="subject">Subject</label>
+          <div class="field-wrap">
+            <input type="text" id="subject" name="subject" readonly>
+          </div>
+        </div>
+
+        <div class="form-row message-row">
+          <label for="message">Message</label>
+          <div class="field-wrap">
+            <textarea id="message" name="message" rows="8"></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+        </div>
+
+        <div class="bottom-line"></div>
+
+        <div class="thank-you-text">
+          <p>Thank you for reaching out to Acadia Park Equipment Co.</p>
+          <p>We'll be in touch soon to help you start planning your next adventure!</p>
+        </div>
+
+        <div class="submit-wrap">
+          <button type="submit">Submit</button>
+          <p id="formSuccess"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="orange-footer"></footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
