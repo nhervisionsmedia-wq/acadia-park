@@ -1,6 +1,5 @@
 // updated contact form fix
 $(document).ready(function () {
-$(document).ready(function () {
     $(".hero-text").hide().fadeIn(2000);
 
     $(".menu-toggle").click(function () {
