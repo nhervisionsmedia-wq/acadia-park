@@ -8,20 +8,43 @@
 </head>
 <body>
 
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="index.html">Home</a>
-    </div>
-  </nav>
+  <header class="site-header">
+        <nav class="main-nav">
+        <div class="nav-container">
 
-  <header class="email-header">
-    <div class="brand-wrap">
-      <div class="brand-text">
-        <h1>ACADIA EQUIPMENT</h1>
-        <h1>PARK CO.</h1>
-      </div>
-    </div>
+           <div class="logo-area">
+  <a href="index.html">
+    <img src="images/black_brandmark.png" class="logo" alt="Acadia Park logo">
+  </a>
+</div>
+        <div class="menu-toggle">☰</div>
+        
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+  <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+
+  <ul class="dropdown-menu">
+    <li><a href="shop.html">Biking</a></li>
+    <li><a href="shop.html">Hiking</a></li>
+    <li><a href="shop.html">Kayaking</a></li>
+    <li><a href="shop.html">Climbing</a></li>
+    <li><a href="shop.html">Apparel</a></li>
+  </ul>
+</li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="cart-icon">
+                <i class="bi bi-cart-fill"></i>
+            </div>
+
+        </div>
+    </nav>
   </header>
+
 
   <div class="color-strip">
     <span class="yellow"></span>
@@ -104,7 +127,28 @@
     </section>
   </main>
 
-  <footer class="orange-footer"></footer>
+<footer class="modern-footer">
+  <div class="footer-top">
+    
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Submit your email for our newsletter" required>
+      <button type="submit">Subscribe</button>
+    </form>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright AcadiaParkEquipmentCo. All Rights Reserved</p>
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+</footer>
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/script.js"></script>

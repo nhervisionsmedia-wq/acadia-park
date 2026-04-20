@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Acadia Park Equipment Co.</title>
+   <title>Acadia Park Equipment Co.</title>
     </div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <script>
@@ -38,15 +40,27 @@
     <nav class="main-nav">
         <div class="nav-container">
 
-            <div class="logo-area">
-                <img src="images/black_brandmark.png" class="logo" alt="logo">
-            </div>
+           <div class="logo-area">
+  <a href="index.html">
+    <img src="images/black_brandmark.png" class="logo" alt="Acadia Park logo">
+  </a>
+</div>
         <div class="menu-toggle">☰</div>
         
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li class="dropdown">
+  <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+
+  <ul class="dropdown-menu">
+    <li><a href="shop.html">Biking</a></li>
+    <li><a href="shop.html">Hiking</a></li>
+    <li><a href="shop.html">Kayaking</a></li>
+    <li><a href="shop.html">Climbing</a></li>
+    <li><a href="shop.html">Apparel</a></li>
+  </ul>
+</li>
                 <li><a href="explore.html">Explore</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -60,15 +74,15 @@
 
     <div class="divider-full"></div>
 
-    <section class="hero-image">
-        <div class="hero-overlay"></div>
+  <section class="home-hero-image">
+  <div class="home-hero-overlay"></div>
 
-        <div class="hero-text">
-            <h1>Acadia Park<br>Equipment Co.</h1>
-            <p>Your adventure. Your world.</p>
-            <button type="button" class="hero-btn">Shop Now</button>
-        </div>
-    </section>
+  <div class="home-hero-text">
+    <h1>Acadia Park<br>Equipment Co.</h1>
+    <p>Your adventure. Your world.</p>
+    <a href="shop.html" class="btn-yellow">Shop Now</a>
+  </div>
+</section>
 
       <div class="divider-full1"></div>
 
@@ -84,7 +98,7 @@
     Their mission is to spread a love for nature, adventure, and the outdoors through reliable gear and community connection.
     </p>
 
-    <a href="about.html" class="btn-yellow">Read More</a>
+    <a href="about.html" class="btn-black">Read More</a>
   </div>
 
   <div class="about-image">
@@ -109,7 +123,7 @@
     <div class="carousel-wrapper">
       <div class="carousel-track" id="carouselTrack">
         <a href="shop.html"><img src="images/10-sports-shoes.jpg" alt="Outdoor shoes"></a>
-        <a href="shop.html"><img src="images/3-brown-backpack-with-map-boots.jpg"Backpack"></a>
+        <a href="shop.html"><img src="images/3-brown-backpack-with-map-boots.jpg" alt="Backpack">
         <a href="shop.html"><img src="images/6-girl-sportswear-rocks.jpg" alt="Outdoor watch"></a>
         <a href="shop.html"><img src="images/9-man-pouring-water.jpg" alt="Camping tent"></a>
         <a href="shop.html"><img src="images/4-close-up-people-with-backpacks-nature.jpg" alt="Outdoor jacket"></a>
@@ -170,22 +184,64 @@
 </section>
 
 <!-- CONTACT SECTION -->
-      <section class="Contact-section">
+<section class="contact-section">
+  <div class="container text-center">
 
-  <div class="contact-left">
-    <h2>Contact Us.<br>Experience More.</h2>
+    <h2 class="contact-title">Contact Us!</h2>
+   <p class="contact-subtext">
+  We're committed to helping you explore with confidence. Contact our team for product assistance, order inquiries, or outdoor gear support!
+</p>
 
-    <p> We're committed to helping you explore with confidence. <br> Contact our team for product assistance, order inquiries, or <br> outdoor gear support.
-    </p>
+    <div class="contact-options">
 
-    <a href="contact.html" class="btn-yellow">Send Us a Message!</a>
+    <div class="contact-box">
+  <i class="fas fa-headset"></i>
+  <h4>Online Support</h4>
+  <p>Live chat available 9am–6pm</p>
+</div>
+
+     <div class="contact-box">
+  <i class="fas fa-envelope"></i>
+  <h4>Email Support</h4>
+  <p>Response within 24 hours</p>
+</div>
+
+<div class="contact-box">
+  <i class="fas fa-phone"></i>
+  <h4>Phone Support</h4>
+  <p>Talk to a real person</p>
+</div>
+
+    </div>
+
+  <a href="contact.html" class="contact-btn">Message Us!</a>
+
   </div>
-
-  </div>
-
 </section>
 
+<div class="divider-full"></div>
 
+<footer class="modern-footer">
+  <div class="footer-top">
+    
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Submit your email for our newsletter" required>
+      <button type="submit">Subscribe</button>
+    </form>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright AcadiaParkEquipmentCo. All Rights Reserved</p>
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+</footer>
 
 
 </body>
